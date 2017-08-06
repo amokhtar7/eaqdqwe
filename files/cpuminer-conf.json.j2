@@ -1,0 +1,16 @@
+{
+	"api-bind" : "127.0.0.1:4048",
+
+	"url" : "stratum+tcp://{{ALGO}}.eu.nicehash.com:{{PORT}}",
+    "user" : "{{WALLET}}",
+    "pass" : "x",
+    "algo" : "{{ALGO}}",
+
+	{% if THREADS %}"threads" : {{THREADS}},{% endif %}
+	{% if PRIORITY %}"cpu-priority" : {{PRIORITY}},{% endif %}
+
+	"benchmark" : false,
+	"debug" : false,
+	"protocol": false,
+	"quiet" : false
+}
